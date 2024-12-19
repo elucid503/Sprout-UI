@@ -1,0 +1,17 @@
+{
+  "name": "sprout-ui",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun Compiler.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.83.0"
+  }
+}
