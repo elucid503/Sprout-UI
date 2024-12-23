@@ -1,0 +1,47 @@
+// Generic (Base Level)
+
+@mixin Container {
+
+    $MixedColour: mix($BackgroundColour, $ForegroundColour, 50%);
+
+    border-radius: $BorderRadiusMedium;
+    background-color: $MixedColour;
+
+    @content;
+
+}
+
+// Padding
+
+@mixin ContainerWithPadding($Padding: $SpacingMedium) {
+
+    @include Container;
+
+    padding: $Padding;
+
+    @content;
+
+}
+
+// Margin
+
+@mixin ContainerWithMargin($Margin: $SpacingMedium) {
+
+    @include Container;
+
+    margin: $Margin;
+
+    @content;
+
+}
+
+// Padding & Margin
+
+@mixin ContainerWithPaddingAndMargin($Padding: $SpacingMedium, $Margin: $SpacingMedium) {
+
+    @include ContainerWithPadding($Padding);
+    @include ContainerWithMargin($Margin);
+
+    @content;
+
+}

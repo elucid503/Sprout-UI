@@ -1,0 +1,80 @@
+// Generic
+
+@mixin GenericFlexContainer {
+
+    display: flex;
+
+    @content;
+
+}
+
+// Centered (Horizontal & Vertical)
+
+@mixin CenteredFlexContainer {
+
+    @include GenericFlexContainer;
+
+    justify-content: center;
+    align-items: center;
+
+    @content;
+
+}
+
+// Column
+
+@mixin ColumnFlexContainer {
+
+    @include GenericFlexContainer;
+
+    flex-direction: column;
+
+    @content;
+
+}
+
+@mixin ColumnCenteredFlexContainer {
+
+    @include ColumnFlexContainer;
+
+    justify-content: center;
+    align-items: center;
+
+    @content;
+
+}
+
+// Row
+
+@mixin RowFlexContainer {
+
+    @include GenericFlexContainer;
+
+    flex-direction: row;
+
+    @content;
+
+}
+
+@mixin RowCenteredFlexContainer {
+
+    @include RowFlexContainer;
+
+    justify-content: center;
+    align-items: center;
+
+    @content;
+
+}
+
+// Wrap
+
+@mixin WrapFlexContainer {
+
+    @include GenericFlexContainer;
+
+    flex-wrap: wrap;
+
+    @content;
+
+}

@@ -28,6 +28,7 @@ Watcher.on("change", async (FilePath) => {
         const Result = await SassCompiler.compileAsync(FilePath, {
 
             style: "compressed",
+            
 
         }).catch((Error) => {
             
@@ -49,6 +50,8 @@ Watcher.on("change", async (FilePath) => {
             return mkdir(DirPath, { recursive: true }).then(() => writeFile(OutputFilePath, Result.css).then(() => true).catch(() => false)).catch(() => false);
 
         });
+        
+        console.clear();
 
         // Log
 
