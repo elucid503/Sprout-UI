@@ -1,0 +1,57 @@
+// Background
+
+$Background: rgb(20, 20, 20);
+
+// Accent 
+
+$Accent: rgb(50, 150, 250);
+
+// Text
+
+$TextColor: rgb(235, 240, 240);
+
+$FontSizeXSmall: clamp(0.75rem, 1vw, 0.90rem);
+$FontSizeSmall: clamp(0.95rem, 2vw, 1.05rem);
+$FontSizeMedium: clamp(1.25rem, 6vw, 1.6rem);
+$FontSizeLarge: clamp(1.6rem, 7vw, 2.75rem);
+$FontSizeXLarge: clamp(2.75rem, 8vw, 4rem);
+
+// Spacing
+
+$SpacingXSmall: 2.5px;
+$SpacingSmall: 5px;
+$SpacingMedium: 10px;
+$SpacingLarge: 15px;
+$SpacingXLarge: 20px;
+
+$SpacingResponsive: clamp(1.25rem, 2vw, 2rem);
+
+// Element Colors
+
+$ElementColorLightest: rgba(80, 80, 80, 0.8);
+$ElementColorLighter: rgba(70, 70, 70, 0.8);
+$ElementColor: rgba(60, 60, 60, 0.8);
+$ElementColorDarker: rgba(50, 50, 50, 0.8);
+$ElementColorDarkest: rgba(40, 40, 40, 0.8);
+
+// Buttons
+
+$ButtonColor: rgba(90, 90, 90, 0.8);
+$ButtonColorHover: rgba(100, 100, 100, 0.8);
+
+// Borders
+
+$BorderRadiusLarge: 20px;
+$BorderRadiusMedium: 15px;
+$BorderRadiusSmall: 12.5px;
+$BorderRadiusXSmall: 7.5px;
+
+// Transitions
+
+$TransitionShort: 0.2s;
+$TransitionMedium: 0.5s;
+$TransitionLong: 1s;
+
+// Filters
+
+$FilterBlur: blur(7px);

@@ -25,11 +25,18 @@ Watcher.on("change", async (FilePath) => {
 
         // Compile File
 
-        const Result = SassCompiler.compile(FilePath, {
+        const Result = await SassCompiler.compileAsync(FilePath, {
 
             style: "compressed",
 
+        }).catch((Error) => {
+            
+            console.error(Error.message);
+            return null;
+
         });
+
+        if (!Result) return;
 
         // Write Output File
 
